@@ -21,6 +21,11 @@ Table of Contents
    :maxdepth: 6
 
   operation_manual
+  known_issues
+  new_features
+  third_party_control
+  time_alignment
+  update_procedure
    
 Indices and tables
 ==================

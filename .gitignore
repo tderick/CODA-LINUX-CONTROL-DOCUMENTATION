@@ -1,0 +1,4 @@
+build/ 
+source/_build/
+venv
+kube-manifests.yaml

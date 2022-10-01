@@ -1,0 +1,165 @@
+{{ $version := strings.ReplaceAll "." "-" .Env.VERSION}}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: system-optimiser-docs-{{ $version }}
+  namespace: martin-coda
+  labels:
+    app: system-optimiser-docs
+    version: "{{ .Env.VERSION }}"
+    name: system-optimiser-docs-{{ .Env.VERSION }}
+spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      name: system-optimiser-docs-{{ .Env.VERSION }}
+      app: system-optimiser-docs
+      version: "{{ .Env.VERSION }}"
+  template:
+    metadata:
+      labels:
+        name: system-optimiser-docs-{{ .Env.VERSION }}
+        app: system-optimiser-docs
+        version: "{{ .Env.VERSION }}"
+    spec:
+      containers:
+      - image: docker.deinstapel.de/coda/system-optimiser/so-docs:{{ .Env.VERSION }}
+        name: docs-server
+        imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: "25m"
+            memory: "64M"
+          limits:
+            cpu: "50m"
+            memory: "128M"
+        livenessProbe:
+          httpGet:
+            path: /index.html
+            port: 80
+          initialDelaySeconds: 10
+          timeoutSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /index.html
+            port: 80
+          initialDelaySeconds: 20
+          timeoutSeconds: 10
+        ports:
+        - containerPort: 80
+          name:  http
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: ds-pull
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: system-optimiser-docs-{{ $version }}
+  namespace: martin-coda
+spec:
+  selector:
+    app: system-optimiser-docs
+    version: "{{ .Env.VERSION }}"
+  type:  ClusterIP
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+---
+
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: replace-version
+  namespace: martin-coda
+spec:
+  stripPrefixRegex:
+    regex:
+    - "/latest"
+    - "/v[\\.\\d]+"
+
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: redirect-slash-version
+  namespace: martin-coda
+spec:
+  redirectRegex:
+    regex: "^(https://docs.codasystemoptimiser.com/)(latest|v[\\.\\d]+)"
+    replacement: "$1$2/"
+
+---
+
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: so-docs-{{ $version }}
+  namespace: martin-coda
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - kind: Rule
+    match: Host(`docs.codasystemoptimiser.com`) && Path(`/{{ .Env.VERSION }}`)
+    middlewares:
+    - name: redirect-slash-version
+    services:
+    - kind: Service
+      name: system-optimiser-docs-{{ $version }}
+      port: 80
+  - kind: Rule
+    match: Host(`docs.codasystemoptimiser.com`) && PathPrefix(`/{{ .Env.VERSION }}/`)
+    middlewares:
+    - name: replace-version
+    services:
+    - kind: Service
+      name: system-optimiser-docs-{{ $version }}
+      port: 80
+  tls:
+    secretName: cvo-tls-secret
+
+---
+{{ if eq .Env.IS_LATEST "true" }}
+
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: so-docs-latest
+  namespace: martin-coda
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - kind: Rule
+    match: Host(`docs.codasystemoptimiser.com`) && Path(`/latest`)
+    middlewares:
+    - name: redirect-slash-version
+    services:
+    - kind: Service
+      name: system-optimiser-docs-{{ $version }}
+      port: 80
+  - kind: Rule
+    match: Host(`docs.codasystemoptimiser.com`) && PathPrefix(`/latest/`)
+    middlewares:
+    - name: replace-version
+    services:
+    - kind: Service
+      name: system-optimiser-docs-{{ $version }}
+      port: 80
+  - kind: Rule
+    match: Host(`docs.codasystemoptimiser.com`)
+    services:
+    - kind: Service
+      name: system-optimiser-docs-{{ $version }}
+      port: 80
+  tls:
+    secretName: cvo-tls-secret
+
+---
+{{ end }}

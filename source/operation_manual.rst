@@ -73,7 +73,7 @@ In order to use Chrome to control the backend server, follow these steps:
 * Enable “Remote Access” within the LINUS Control settings page: 
 
 .. Remote Access
-.. image:: assets/images/remote_access.png
+.. image:: assets/images/operation_manual/1/remote_access.png
     :alt: Remote Access
     :width: 500
     :align: center
@@ -85,12 +85,14 @@ In order to use Chrome to control the backend server, follow these steps:
 * This will mitigate the need for use of VNC clients.
 
 .. VNC client
-.. image:: assets/images/vnc_client.png
+.. image:: assets/images/operation_manual/1/vnc_client.png
     :alt: VNC client
     :width: 500
     :align: center
 
 * In this example, 192.168.1.250 would be the IP address of the host machine.
+
+
 
 2. LINUS Control Application
 ----------------------------
@@ -104,7 +106,7 @@ It is divided into three key areas; the top toolbar, the workspace and the botto
 The top toolbar contains the top-level operating modes of LINUS Control, a dropdown list for choosing the amplifier detail views, it also has a master mute button, the Fallback Recovery button and the control for taking LINUS Control Online or Offline.
 
 .. Top Tool Bar
-.. image:: assets/images/toptoolbar.png
+.. image:: assets/images/operation_manual/2/toptoolbar.png
     :alt: Top Tool Bar
     :align: center
 
@@ -115,7 +117,7 @@ The top toolbar contains the top-level operating modes of LINUS Control, a dropd
 The active mode is highlighted in RED. Keyboard shortcuts are mapped as below:
 
 ..  Top Toolbar Modes
-.. image:: assets/images/toolbarmode.png
+.. image:: assets/images/operation_manual/2/toolbarmode.png
     :alt:  Top Toolbar Modes
     :align: center
 
@@ -137,14 +139,14 @@ In either of these circumstances, the ‘Recover Digital’ button will be shown
 The menu provides functionality for switching through the different view states of the Amplifier Icons. Its entities are also mapped to keyboard shortcuts [numbers ‘1’ through ‘8’].
 
 ..  Top Toolbar
-.. image:: assets/images/toptoolbardropdown.png
+.. image:: assets/images/operation_manual/2/toptoolbardropdown.png
     :alt:  Top Toolbar
     :align: center
 
 |
 
 ..  Dropdown Detail View
-.. image:: assets/images/dropdowndetails.png
+.. image:: assets/images/operation_manual/2/dropdowndetails.png
     :alt: Dropdown Detail View
     :align: center
 
@@ -213,7 +215,7 @@ This is a ‘nickname’ that can be given to each amplifier in the workspace an
 This view shows which loudspeakers are assigned to each channel. The top line displays a short name of the type of loudspeaker & the bottom line shows the type of the output channel.
 
 ..  Speaker
-.. image:: assets/images/speaker.png
+.. image:: assets/images/operation_manual/2/speaker.png
     :alt: Speaker
     :align: center
 
@@ -244,7 +246,7 @@ The meters show the input signal level on a per-channel basis for the input assi
 For each channel, there is a combined mute button and output level indicator. If the mute is active on the channel, the indicator turns solid red. If the mute is inactive, the background of the channel is light grey.
 
 ..  Mutes & Outputs
-.. image:: assets/images/mutes_and_output.png
+.. image:: assets/images/operation_manual/2/mutes_and_output.png
     :alt: Mutes & Outputs
     :align: center
 
@@ -257,7 +259,7 @@ The output meters are calibrated in dB relative to the loudspeaker’s full RMS 
     • Output meters start at -45dB (rel)
     • Output meters are full-scale at 0dB (rel)
 
-.. image:: assets/images/outputmeter.png
+.. image:: assets/images/operation_manual/2/outputmeter.png
     :align: center
     :width: 500
 
@@ -269,7 +271,7 @@ To the right of each amplifier icon, a gain reduction meter is drawn. This shows
     • Gain Reduction meters are full-scale at -6dB GR
     • Gain Reduction meters are red when there is -6dB GR or more
 
-.. image:: assets/images/gainreductionmeter.png
+.. image:: assets/images/operation_manual/2/gainreductionmeter.png
     :align: center
     :width: 500
 
@@ -280,7 +282,7 @@ To the right of each amplifier icon, a gain reduction meter is drawn. This shows
 ***********
 For each channel, the combined sum of all the group gains is displayed.
 
-.. image:: assets/images/gain.png
+.. image:: assets/images/operation_manual/2/gain.png
     :align: center
     :width: 400
 
@@ -288,7 +290,7 @@ For each channel, the combined sum of all the group gains is displayed.
 ************
 For each channel, the combined sum of all the group delays is displayed.
 
-.. image:: assets/images/delay.png
+.. image:: assets/images/operation_manual/2/delay.png
     :align: center
     :width: 400
 
@@ -299,7 +301,7 @@ For each channel, the combined sum of all the group delays is displayed.
 A simple way for you to mute or unmute all connected & online amplifiers on the network. 
 Red is muted, white is unmuted.
 
-.. image:: assets/images/mastermute.png
+.. image:: assets/images/operation_manual/2/mastermute.png
     :align: center
     :width: 200
 
@@ -309,7 +311,7 @@ Red is muted, white is unmuted.
 ++++++++++++++++++++++++++++++++++++
 This button toggles the software Online & Offline. 
 
-.. image:: assets/images/offline_online.png
+.. image:: assets/images/operation_manual/2/offline_online.png
     :align: center
     :width: 300
 
@@ -318,18 +320,18 @@ This button toggles the software Online & Offline.
 2.7.   Top Toolbar – View
 ++++++++++++++++++++++++++
 
-.. |default| image::  assets/images/default.png
+.. |default| image::  assets/images/operation_manual/2/default.png
     :width: 80
 
 This button |default|  toggles View presets. Custom View presets can be created, these store selected elements and their position in the space (Amplifiers and Groups).
 
-.. image:: assets/images/default.png
+.. image:: assets/images/operation_manual/2/default.png
     :align: center
     :width: 200
 
 |
 
-.. image:: assets/images/default_details.png
+.. image:: assets/images/operation_manual/2/default_details.png
     :align: center
     :width: 300
 
@@ -340,7 +342,7 @@ This button |default|  toggles View presets. Custom View presets can be created,
 
 Group is unselected and Amplifier icons are displaced:
 
-.. image:: assets/images/amplifiericons.png
+.. image:: assets/images/operation_manual/2/amplifiericons.png
     :align: center
 
 |
@@ -349,28 +351,28 @@ Group is unselected and Amplifier icons are displaced:
 
 All elements selected and shown in the space, Amplifier and Group icons displaced:
 
-.. image:: assets/images/amplifiergroupicons.png
+.. image:: assets/images/operation_manual/2/amplifiergroupicons.png
     :align: center
 
 |
 
 • Elements represent names of Amplifiers and Groups
 
-.. image:: assets/images/nameamplifiergroupicons.png
+.. image:: assets/images/operation_manual/2/nameamplifiergroupicons.png
     :align: center
 
 |
 
 • Elements can be removed individually from the view. Simply select the element in the setup space and press this button:
 
-.. image:: assets/images/removefromviews.png
+.. image:: assets/images/operation_manual/2/removefromviews.png
     :align: center
 
 |
 
 • Custom View can be reset by pressing Default (Views are stored in the Linus Control file)
 
-.. image:: assets/images/customviews.png
+.. image:: assets/images/operation_manual/2/customviews.png
     :align: center
 
 |
@@ -380,7 +382,7 @@ All elements selected and shown in the space, Amplifier and Group icons displace
 
 The Bottom Toolbar contains tools relevant to the LINUS Control window & the extra functionality of amplifier identification.  
 
-.. image:: assets/images/bottomtoolbar.png
+.. image:: assets/images/operation_manual/3/bottomtoolbar.png
     :align: center
 
 |
@@ -390,7 +392,7 @@ The Bottom Toolbar contains tools relevant to the LINUS Control window & the ext
 
 The Lock function protects you against mistakes that can potentially ruin your sound mid-show. The Padlock icon in the Bottom Toolbar is displayed when the operation mode is changed to “MONITOR” in the Top Toolbar. When pressed, it will turn red/orange and all interface controls will be locked to safeguard against inadvertent keyboard or mouse inputs during the show.
 
-.. image:: assets/images/bottontoolbarlock.png
+.. image:: assets/images/operation_manual/3/bottontoolbarlock.png
     :align: center
 
 |
@@ -399,7 +401,7 @@ The Lock function protects you against mistakes that can potentially ruin your s
 ++++++++++++++++++++++++++++++
 Click ‘Identify‘ to flash the LED’s on the amplifiers that are selected on the workspace.
 
-.. image:: assets/images/identity.png
+.. image:: assets/images/operation_manual/3/identity.png
     :align: center
 
 |
@@ -409,7 +411,7 @@ Click ‘Identify‘ to flash the LED’s on the amplifiers that are selected on
 +++++++++++++++++++++++++++++++++++++++++
 A view to suit you and stay easy on the eyes. The button in the centre of the Bottom Toolbar toggles the interface between night & day mode. 
 
-.. image:: assets/images/night_day_mode.png
+.. image:: assets/images/operation_manual/3/night_day_mode.png
     :align: center
 
 |
@@ -433,7 +435,7 @@ The background of the Bottom Toolbar is black by default.  In the event of an er
 
 In the case of an Error, the Bottom Toolbar background will change to a red colour to show that it needs your attention urgently.
 
-.. image:: assets/images/redbottomtoolbar.png
+.. image:: assets/images/operation_manual/3/redbottomtoolbar.png
     :align: center
 
 |

@@ -375,3 +375,65 @@ All elements selected and shown in the space, Amplifier and Group icons displace
 
 |
 
+3. Bottom Toolbar
+------------------
+
+The Bottom Toolbar contains tools relevant to the LINUS Control window & the extra functionality of amplifier identification.  
+
+.. image:: assets/images/bottomtoolbar.png
+    :align: center
+
+|
+
+3.1. Bottom Toolbar – Lock 
+++++++++++++++++++++++++++
+
+The Lock function protects you against mistakes that can potentially ruin your sound mid-show. The Padlock icon in the Bottom Toolbar is displayed when the operation mode is changed to “MONITOR” in the Top Toolbar. When pressed, it will turn red/orange and all interface controls will be locked to safeguard against inadvertent keyboard or mouse inputs during the show.
+
+.. image:: assets/images/bottontoolbarlock.png
+    :align: center
+
+|
+
+3.2. Bottom Toolbar – Identify 
+++++++++++++++++++++++++++++++
+Click ‘Identify‘ to flash the LED’s on the amplifiers that are selected on the workspace.
+
+.. image:: assets/images/identity.png
+    :align: center
+
+|
+
+
+3.3. Bottom Toolbar - Night Mode/Day Mode
++++++++++++++++++++++++++++++++++++++++++
+A view to suit you and stay easy on the eyes. The button in the centre of the Bottom Toolbar toggles the interface between night & day mode. 
+
+.. image:: assets/images/night_day_mode.png
+    :align: center
+
+|
+
+
+3.4.  Bottom Toolbar – Zoom
+++++++++++++++++++++++++++++
+
+View the software just as easily on any screen resolution or size. The slider in the bottom right side of the Bottom Toolbar scales the workspace and its contents.  This allows for the optimum display size on different resolution screens from small systems to large ones.
+
+
+3.5.  Bottom Toolbar – Settings
++++++++++++++++++++++++++++++++
+
+Pressing the settings ‘cog’ or ‘gear’ icon will bring up the application settings page.
+
+3.6. Bottom Toolbar – ‘Attention Getter’
+++++++++++++++++++++++++++++++++++++++++
+
+The background of the Bottom Toolbar is black by default.  In the event of an error, it will change its background colour accordingly.  This serves to quickly get the attention of the user in a subtle way.  Clicking the background of the Bottom Toolbar will navigate to the AMPS view, where the error status of the amplifier(s) can be seen.
+
+In the case of an Error, the Bottom Toolbar background will change to a red colour to show that it needs your attention urgently.
+
+.. image:: assets/images/redbottomtoolbar.png
+    :align: center
+
+|

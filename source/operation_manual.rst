@@ -107,3 +107,230 @@ The top toolbar contains the top-level operating modes of LINUS Control, a dropd
 .. image:: assets/images/toptoolbar.png
     :alt: Top Tool Bar
     :align: center
+
+|    
+
+2.2. Top Toolbar Modes
++++++++++++++++++++++++
+The active mode is highlighted in RED. Keyboard shortcuts are mapped as below:
+
+..  Top Toolbar Modes
+.. image:: assets/images/toolbarmode.png
+    :alt:  Top Toolbar Modes
+    :align: center
+
+|
+
+2.3. Top Toolbar Fallback Controls - Recover Digital
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+This button is visible if one or more amplifiers in the workspace are running on their backup signal.  This would happen under one of the following circumstances:
+
+* Their digital signal has been lost, or,
+* The amplifiers were “forced” to fallback, either through front panel button presses, the 3rd Party Control protocol, or from the Q-SYS Plugin.
+
+In either of these circumstances, the ‘Recover Digital’ button will be shown.  Pressing the button will command all connected amplifiers in the workspace to return to their primary digital signal.  If all amplifiers in the workspace successfully return to their primary digital signal, this button will then be hidden.
+
+
+2.4.  Top Toolbar - Dropdown Detail View
++++++++++++++++++++++++++++++++++++++++++
+The menu provides functionality for switching through the different view states of the Amplifier Icons. Its entities are also mapped to keyboard shortcuts [numbers ‘1’ through ‘8’].
+
+..  Top Toolbar
+.. image:: assets/images/toptoolbardropdown.png
+    :alt:  Top Toolbar
+    :align: center
+
+|
+
+..  Dropdown Detail View
+.. image:: assets/images/dropdowndetails.png
+    :alt: Dropdown Detail View
+    :align: center
+
+|    
+
+2.4.1. Amplifier Type 
+*********************
+
+To provide a simple overview, the type of amplifier is displayed in the amplifier icons. 
+
+This has implications for the creation of the show file. The key differences crucial for preset compatibility are detailed in the table below:
+
+.. list-table::
+   :widths: 25 25 25 15
+   :header-rows: 1
+   :align: center
+
+   * - Amplifier Type
+     - Sensor
+     - Dante
+     - LiNET Channels
+
+   * - LINUS14
+     - YES
+     - Optional
+     - 8
+    
+   * - LINUS10
+     - YES
+     - NO
+     - 8
+
+   * - LINUS10-C
+     - NO
+     - NO
+     - 4
+
+   * - LINUS12C
+     - NO
+     - Optional
+     - 8
+
+   * - LINUS5-C
+     - NO
+     - NO
+     - 4
+
+   * - LINUS CON
+     - ALLOWED
+     - NO
+     - 8
+
+Please see the accompanying document “LINUS Control Loudspeaker File List” to determine loudspeaker compatibility.
+
+
+2.4.2. ID / IP 
+***************
+The ID number of the amplifier is displayed (as with all other detail views) in the left side of the icon. The IP Address for this amplifier is shown in the central area of the icon.
+
+2.4.3. Amplifier Name
+*********************
+This is a ‘nickname’ that can be given to each amplifier in the workspace and keep things more organised. It is a standalone entry that is for your reference. Click the name and enter text to edit the name.
+
+2.4.4. Speaker
+**************
+This view shows which loudspeakers are assigned to each channel. The top line displays a short name of the type of loudspeaker & the bottom line shows the type of the output channel.
+
+..  Speaker
+.. image:: assets/images/speaker.png
+    :alt: Speaker
+    :align: center
+
+|
+
+2.4.5. Inputs
+**************
+
+The channel input sources are shown on a per-channel basis. The Input Level meters are drawn on a per channel basis.
+
+Prefixes:
+    • A / B / C / D 				= Analog Inputs
+    • 1 / 2 / 3 / 4 .. 8 			= LiNET Inputs
+    • D1 / D2 / D3 / D4 			= Dante Inputs
+Suffixes:
+    • -- 	(negative sign)		= Polarity Inverted
+    • !	(exclamation mark)		= Mixture of Inputs, or no input
+   
+The meters show the input signal level on a per-channel basis for the input assigned to that channel. 
+
+• Input meters start at -60dBFS.
+• When the peak level exceeds -10dBFS, the meter will turn yellow. 
+• When the peak level exceeds -3dBFS, the meter will turn red.
+
+2.4.6. Mutes & Outputs
+**********************
+
+For each channel, there is a combined mute button and output level indicator. If the mute is active on the channel, the indicator turns solid red. If the mute is inactive, the background of the channel is light grey.
+
+..  Mutes & Outputs
+.. image:: assets/images/mutes_and_output.png
+    :alt: Mutes & Outputs
+    :align: center
+
+|
+
+When the channel mutes are off, output meters are displayed in green behind the suffix. 
+
+The output meters are calibrated in dB relative to the loudspeaker’s full RMS output potential on a per-channel basis.
+
+    • Output meters start at -45dB (rel)
+    • Output meters are full-scale at 0dB (rel)
+
+.. image:: assets/images/outputmeter.png
+    :align: center
+    :width: 500
+
+|
+
+To the right of each amplifier icon, a gain reduction meter is drawn. This shows gain reduction on a per-channel basis.
+
+    • Gain Reduction meters start when there is -1dB of Gain reduction
+    • Gain Reduction meters are full-scale at -6dB GR
+    • Gain Reduction meters are red when there is -6dB GR or more
+
+.. image:: assets/images/gainreductionmeter.png
+    :align: center
+    :width: 500
+
+|
+
+
+2.4.7. Gain 
+***********
+For each channel, the combined sum of all the group gains is displayed.
+
+.. image:: assets/images/gain.png
+    :align: center
+    :width: 400
+
+2.4.8. Delay 
+************
+For each channel, the combined sum of all the group delays is displayed.
+
+.. image:: assets/images/delay.png
+    :align: center
+    :width: 400
+
+|
+
+2.5.  Top Toolbar - Master Mute
++++++++++++++++++++++++++++++++
+A simple way for you to mute or unmute all connected & online amplifiers on the network. 
+Red is muted, white is unmuted.
+
+.. image:: assets/images/mastermute.png
+    :align: center
+    :width: 200
+
+|
+
+2.6.  Top Toolbar - Online / Offline
+++++++++++++++++++++++++++++++++++++
+This button toggles the software Online & Offline. 
+
+.. image:: assets/images/offline_online.png
+    :align: center
+    :width: 300
+
+|
+
+2.7.   Top Toolbar – View
+++++++++++++++++++++++++++
+
+.. |default| image::  assets/images/default.png
+    :width: 80
+
+This button |default|  toggles View presets. Custom View presets can be created, these store selected elements and their position in the space (Amplifiers and Groups).
+
+.. image:: assets/images/default.png
+    :align: center
+    :width: 200
+
+|
+
+.. image:: assets/images/default_details.png
+    :align: center
+    :width: 300
+
+|

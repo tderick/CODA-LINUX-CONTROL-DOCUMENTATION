@@ -334,3 +334,44 @@ This button |default|  toggles View presets. Custom View presets can be created,
     :width: 300
 
 |
+
+
+• Example 1: 
+
+Group is unselected and Amplifier icons are displaced:
+
+.. image:: assets/images/amplifiericons.png
+    :align: center
+
+|
+
+• Example 2: 
+
+All elements selected and shown in the space, Amplifier and Group icons displaced:
+
+.. image:: assets/images/amplifiergroupicons.png
+    :align: center
+
+|
+
+• Elements represent names of Amplifiers and Groups
+
+.. image:: assets/images/nameamplifiergroupicons.png
+    :align: center
+
+|
+
+• Elements can be removed individually from the view. Simply select the element in the setup space and press this button:
+
+.. image:: assets/images/removefromviews.png
+    :align: center
+
+|
+
+• Custom View can be reset by pressing Default (Views are stored in the Linus Control file)
+
+.. image:: assets/images/customviews.png
+    :align: center
+
+|
+

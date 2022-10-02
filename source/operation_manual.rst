@@ -1116,3 +1116,149 @@ To unlock the amplifier, press this (Unlock) button, then enter the password int
 
 |
 
+6. Tune Page
+-------------
+
+
+6.1. Adjusting Group Parameters
++++++++++++++++++++++++++++++++
+
+.. image:: assets/images/operation_manual/6/ajustinggroupparameter.png
+    :align: center
+
+|
+
+All group tuning parameters are enabled and disabled by clicking on the corresponding icon.
+
+A greyed-out icon means the parameter is disabled. A green icon means the parameter is enabled. 
+
+When the filter data is adjusted, the filter will be enabled automatically.
+
+.. image:: assets/images/operation_manual/6/enable_disable.png
+    :align: center
+
+|
+
+6.2.  Absolute vs Relative Filters 
+++++++++++++++++++++++++++++++++++
+
+When a Loudspeaker is assigned to more than one group, an absolute filter can only be active in one group. A relative filter can be active in all groups with the output being the sum of all assigned groups.
+
+
+.. list-table::
+    :widths: 50 50
+    :header-rows: 1
+    :align: center
+
+    * - Absolute Filters
+      - Relative Filters
+    
+    * - Array
+      - Gain
+    
+    * - Sizing
+      - Delay
+    
+    * - Distance
+      - Human
+
+    * - Subsonic
+      - HF Shelf
+
+    * - Low Boost
+      - 
+    
+    * - PEQ’s
+      - 
+
+6.2.1. Gain  
+************
+The relative gain of the assigned loudspeakers can be adjusted from +12db to -99db.
+
+6.2.2. Delay  
+************
+
+The relative delay of the assigned loudspeakers can be perfected for time alignment, and each can be adjusted from 0mS to 1000mS. 
+(0 to 200mS in the case of LINUS5-C or LINUS10-C).
+
+6.2.3. Array Filter  
+*******************
+
+When Line Array loudspeakers are assigned to the group, the absolute Array value can be adjusted from 4x to 20x. 
+This can only be active within one group per loudspeaker.
+
+6.2.4. Sizing Filter  
+********************
+The absolute sizing of the assigned loudspeaker can be adjusted from 0.5x to 2.0x. 
+This can only be active within one group per loudspeaker.
+
+6.2.5. Distance Filter
+**********************
+The absolute distance value for the assigned loudspeakers can be adjusted from 0m to 100m. 
+This can only be active within one group per loudspeaker.
+
+6.2.6. Subsonic Filter
+**********************
+
+The absolute level of the subsonic filter which can be adjusted from +12db to -20db. 
+This can only be active within one group per loudspeaker.
+
+6.2.7. Low Boost Filter
+************************
+The absolute level of the low boost filter which can be adjusted from +12db to -20db. 
+This can only be active within one group per loudspeaker.
+
+6.2.8. Human Filter 
+*******************
+The relative level of the human filter which can be adjusted from +12db to -20db.
+
+6.2.9. HF Shelf Filter
+**********************
+The relative level of the HF shelf filter which can be adjusted from +12db to -20db.
+
+6.2.10. PEQs
+*************
+There are a total of 7 equalisers to perfect the frequency response of a loudspeaker (4 EQs if using a LINUS10-C or LINUS5-C Amplifier), these can be utilised throughout any of the assigned groups. 
+
+    • Only EQ’s that have not been enabled in another group can be used. 
+    • An already enabled EQ in another group will be greyed out.
+    • Additional EQ’s can be added by clicking the Add equaliser button.
+
+.. image:: assets/images/operation_manual/6/pegs.png
+    :align: center
+
+|
+
+
+6.2.11. PEQ Modes
+*****************
+
+You can further tailor your sound with EQ. All 7 equalisers can be changed between parametric, high self and low shelf. 
+Clicking on the dropdown arrow displays the three options, plus the ability to delete the filter.
+
+.. image:: assets/images/operation_manual/6/peqmode.png
+    :align: center
+
+|
+
+
+6.2.12. Click & Drag EQ Window
+*******************************
+
+The gain and frequency of the equaliser can be manipulated by left clicking and dragging the corresponding handle.  The PEQ number and gain value is displayed when the cursor moves over the handle.
+
+.. image:: assets/images/operation_manual/6/clickdrageowindows.png
+    :align: center
+
+|
+
+
+6.2.13. PEQ Handles
+*******************
+
+The filters can be manipulated within the PEQ graph by clicking on the filter point on the PEQ graph, then adjusting the handles that appear. 
+
+.. image:: assets/images/operation_manual/6/peqhandle.png
+    :align: center
+
+|

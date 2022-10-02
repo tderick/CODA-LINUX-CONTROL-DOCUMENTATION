@@ -439,3 +439,276 @@ In the case of an Error, the Bottom Toolbar background will change to a red colo
     :align: center
 
 |
+
+4. Setup Mode
+--------------
+
+Design your workspace ideally for your specific audio needs. The setup page is the start point for the design of the workspace. From here, it is possible to add Amplifiers & Groups to the workspace, choose input routing, assign groups and arrange your system in a logical manner.
+
+Key Concepts:
+
+• Amplifiers are displayed with the following icon style:
+
+.. image:: assets/images/operation_manual/4/lightstyle.png
+    :align: center
+
+|
+
+• Tuning Groups are displayed with the following icon style:
+
+.. image:: assets/images/operation_manual/4/blackstyle.png
+    :align: center
+
+|
+
+• Loudspeakers are assigned to Amplifier Channels.
+• Amplifier Channels are assigned to Tuning Groups.
+• Tuning Group parameters are adjusted on the TUNE page.
+
+
+4.1. Setup Mode - Top Toolbar
++++++++++++++++++++++++++++++
+
+In Setup mode, an extra toolbar is visible underneath the Top Toolbar. More advanced, setup-specific controls are displayed here, which are not necessary in the Tune or Monitor modes.
+
+
+.. image:: assets/images/operation_manual/4/setupmode.png
+    :align: center
+
+|
+
+
+4.2.  Setup Mode - Add Amplifier
+++++++++++++++++++++++++++++++++
+
+Pressing the plus icon (or pressing Cmd + F) will add a new amplifier of the selected type into the workspace. It will be given the next logical ID (next free ID number, numerically ascending).  The type of amplifier can be chosen by pressing the bottom half of the icon and choosing from the list.
+
+.. image:: assets/images/operation_manual/4/addamplifier.png
+    :align: center
+
+|
+
+
+4.3.Setup Mode - Delete Amplifier / Group
++++++++++++++++++++++++++++++++++++++++++
+Pressing the ‘X’ icon will remove all selected Amplifiers and Groups from the workspace.
+
+.. image:: assets/images/operation_manual/4/deleteamplifier.png
+    :align: center
+
+|
+
+A confirmation dialog is presented to confirm this action:
+
+.. image:: assets/images/operation_manual/4/confirmdialog.png
+    :align: center
+
+|
+
+4.4.  Setup Mode – Choose Loudspeakers
++++++++++++++++++++++++++++++++++++++++
+
+When a new file is created and an Amplifier is added to the workspace, a loudspeaker file is added to the loudspeaker banner. Additional loudspeakers can be added to the banner by pressing the “+” button.  This loudspeaker file has two areas:
+
+.. image:: assets/images/operation_manual/4/chooseloudspeaker.png
+    :align: center
+
+|
+
+
+.. image:: assets/images/operation_manual/4/addnewloudspeaker.png
+    :align: center
+
+|
+
+.. image:: assets/images/operation_manual/4/assignmode.png
+    :align: center
+
+|
+
+4.5.  Setup Mode – ‘Lasso Assign’ Loudspeakers to Channels
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+When the loudspeaker is in ‘Assign’ mode, it is possible to click and drag a bounding box to assign the channels quickly to multiple channels:
+
+.. image:: assets/images/operation_manual/4/lassoassign.png
+    :align: center
+
+|
+
+4.6. Setup Mode – Remove Loudspeakers from Loudspeakers Bar
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+When a loudspeaker is not assigned to any amplifier in the workspace, a small cross is displayed in the upper right of the icon. Clicking this will remove it from the Loudspeakers bar:
+
+.. image:: assets/images/operation_manual/4/removeloudspeaker.png
+    :align: center
+
+|
+
+4.7. Setup Mode – Add Tuning Group
+++++++++++++++++++++++++++++++++++
+
+Pressing this button (or pressing Cmd + G) will add a new Tuning Group to the workspace.
+
+.. note::
+    If the user clicks the Add Tuning Group button, then immediately starts typing the desired name of the group, before pressing ‘Enter’, the Tuning Group will assign this text as its name.
+
+.. image:: assets/images/operation_manual/4/tunninggroup.png
+    :align: center
+
+|
+
+4.8. Setup Mode - Name Tuning Group
++++++++++++++++++++++++++++++++++++
+
+Single clicking the group selects it. Double clicking the group enables the name to be changed.  Press enter on the keyboard to set the name.
+
+.. image:: assets/images/operation_manual/4/namingtunninggroup.png
+    :align: center
+
+|
+
+4.9.   Setup Mode - Assign Loudspeakers to a Group
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. |plusicon| image::  assets/images/operation_manual/4/plusicon.png
+    :width: 20
+
+.. |assignallbutton| image::  assets/images/operation_manual/4/assignallbutton.png
+    :width: 20
+
+Clicking the green ‘Plus’ Arrow |plusicon| on the group places it into ‘Assign’ mode. 
+The Group’s background colour will change to green to indicate this.
+
+Click the desired Loudspeakers to assign them to the Group.
+Click the |assignallbutton|  button to assign all the Loudspeakers / Amp Channels into the Group.
+
+.. image:: assets/images/operation_manual/4/ampchannelgroup.png
+    :align: center
+
+|
+
+
+4.10. Setup Mode – Lasso Assign Loudspeakers to a Group
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+When the group is in ‘Assign’ mode, it is easy to click and drag a blue bounding box to add loudspeakers into that group.  Pressing ‘Shift’ and clicking the bounding box will remove the chosen loudspeakers from that group (the bounding box will be red in this case):
+
+.. image:: assets/images/operation_manual/4/loudspeakertoagroup.png
+    :align: center
+
+|
+
+4.11. Setup Mode – Group Assign Alternate Method
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+If Amplifiers are selected when you add a new group to the workspace, they will be added to the group automatically.
+
+
+4.12. Setup Mode – Change Amplifier
++++++++++++++++++++++++++++++++++++
+
+It is possible to change the type of Amplifier in the offline workspace. Select the Amplifiers in the workspace, either with the multiselect lasso or by clicking them individually, then click the “Choose Amp” dropdown in the toolbar.
+
+.. image:: assets/images/operation_manual/4/changeamplifier.png
+    :align: center
+
+|
+
+4.13.Setup Mode – Replace Amplifier ID
+++++++++++++++++++++++++++++++++++++++
+
+It is simple to change the ID of an amplifier in the workspace when Offline. In Setup mode, double click the ID number of the amplifier in the workspace.  The following dialog will be presented:
+
+.. image:: assets/images/operation_manual/4/remplaceamplifierid.png
+    :align: center
+
+|
+
+4.14. Setup Mode - Set Routing
+++++++++++++++++++++++++++++++
+
+It is also straightforward to adjust the input routing of one or more amplifiers at the same time. 
+
+.. note::
+     There are a couple of variables that affect the routing possibilities, namely, the Amplifier Type and Loudspeaker Choice. If more than one Amplifier is selected and this selection comprises different Loudspeaker types and/or Amplifier types, the lowest common denominator of routing possibilities will be presented in the Routing Window. For instance, if two LINUS14’s are selected, with AiRAY (a 2-WAY enclosure) selected on the first and SCP (a 1-WAY enclosure) on the second, the Routing Window would only allow for patching Channels 1+2 and Channels 3+4 as a 2-WAY pair, even for the Amplifier with the SCP assigned.
+
+
+Select the Amplifier(s)
+
+Click the “Choose Routing” button:
+
+.. image:: assets/images/operation_manual/4/choosingrouting.png
+    :align: center
+
+|
+
+Choose “Analog” or “Digital”:
+
+    • Input signals are shown in the vertical columns
+    • Outputs are shown in the horizontal rows
+    • Click the ‘Ticks’ to patch the Inputs to the Outputs
+    • The Output Polarity buttons are the toggle switches to the right of the Outputs
+
+.. image:: assets/images/operation_manual/4/outputpolarity.png
+    :align: center
+
+.. image:: assets/images/operation_manual/4/outputpolarity2.png
+    :align: center
+
+|
+
+.. note::
+     The Dante patch is fixed one to one within the firmware. To adjust the routing within Dante, please use Audinate’s Dante Controller. 
+
+All amplifiers, with the exception of LINUS10 and LINUS CON, when online, can be put in and out of ‘standby’ from the AMPS page within LINUS Control.
+
+To recap, an amplifier is shown as on or in standby by displaying a grey colour to the left of the icon in the SETUP page:
+
+.. image:: assets/images/operation_manual/4/standby.png
+    :align: center
+
+|
+
+Amplifiers set in standby wake up in the AMPS Section:
+
+**On**
+
+.. image:: assets/images/operation_manual/4/on.png
+    :align: center
+
+|
+
+**Standby**
+
+.. image:: assets/images/operation_manual/4/standbybutton.png
+    :align: center
+
+|
+
+**Wake Up**
+
+.. image:: assets/images/operation_manual/4/wakeupbutton.png
+    :align: center
+
+|
+
+To place an amplifier in standby, or remove it from standby, using LINUS Control online, click the ”Power” button in the AMPS page. This will toggle the amp between on and standby. The front panel switch works in combination with LINUS Control in a “Latest takes precedence” manner, which means LINUS Control can override a front panel switch and “wake up” an amplifier that’s in standby with its front panel switch off.
+
+.. image:: assets/images/operation_manual/4/on_off.png
+    :align: center
+
+|
+
+Waking up the amplifier can be done in the AMPS page or in the SETUP page, simply by clicking the grey square on the left.
+
+.. image:: assets/images/operation_manual/4/amppoweroff.png
+    :align: center
+
+|
+
+.. image:: assets/images/operation_manual/4/linus14.png
+    :align: center
+
+|

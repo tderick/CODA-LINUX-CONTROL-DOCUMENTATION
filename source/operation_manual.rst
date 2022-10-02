@@ -715,3 +715,404 @@ Waking up the amplifier can be done in the AMPS page or in the SETUP page, simpl
 
 5. AMPS Page 
 -------------
+
+The AMPS Page gives a quick and efficient overview of the status of all connected amplifiers in the system. 
+It also provides the interface for the Snapshot, State and IP functionality (these are explained below) .
+
+5.1. AMPS Page - List of Amplifiers
++++++++++++++++++++++++++++++++++++
+
+Arranged numerically by ID number, the Amplifier List is integral to the AMPS Page. 
+On the left, after the ID Number you will see the Amplifier Type.
+The Loudspeakers assigned to the channels are next represented by blue icons.
+There is an Amplifier-specific ‘Store Snapshot’ button in each row.
+
+.. image:: assets/images/operation_manual/5/listofamplifier.png
+    :align: center
+
+|
+
+5.2. AMPS Mode - Online Status
++++++++++++++++++++++++++++++++
+
+If the amplifier is online, a green indicator is shown here. 
+
+.. image:: assets/images/operation_manual/5/onlinestatus.png
+    :align: center
+
+|
+
+
+5.3. Snapshots
++++++++++++++++
+
+Snapshots are a convenient way of storing the absolute state of an amplifier at an exact point in time. Absolutely all parameters are stored, apart from the ID of the Amplifier and the contents of the other Snapshots. 
+
+Snapshots can either be recalled from the Front Panel, or from the 3rd Party UDP Commands which are detailed in the accompanying document “LINUS Third Party Control”.
+
+.. note::
+    There is a fundamental difference in operation between the legacy application LINUS Live v1.X and LINUS Control v2.X in that there are no ‘Presets’ stored within the Amplifiers, only the 20x Snapshots and the ‘Live State’ of the Amplifier as commanded by LINUS Control.
+
+.. note::
+    Snapshots cannot be stored or overwritten from the Front Panel on LINUS5-C and LINUS10-C Amplifiers.  On LINUS14 / LINUS10, LINUS CON and LINUS12-C, Snapshot locations 1 through 10 inclusively have read-write access from the Front Panel. Snapshot locations 11 through 20 inclusively are read only from the Front Panel & can only be stored or overwritten from LINUS Control. 
+
+Example Usage
+Scenario A). (Semi)-Permanent Installation
+The Sound Designer commissions the system and saves a LINUS Control Show File.  He or she also creates a couple of other deployments of the same system, when the ‘venue’ is utilised for different roles, again, creating show files for these.
+
+I.E: 
+    • There is a main system with delays, all perfectly time aligned and tuned to cover one big room and ensure a consistent sound.
+and
+    • It is also possible to compartmentalise the same large room into smaller rooms, whereby the delays are rotated around to act as the main system for the smaller ‘satellite’ rooms. 
+
+In this instance, when s/he is happy with the tuning of the system for the larger room, s/he will press the “Store Global Snapshot” button on the top right of the AMPS Page. 
+
+.. image:: assets/images/operation_manual/5/storeglobalsnapshot.png
+    :align: center
+
+|
+
+A window will then pop up, where you can choose the Snapshot Location, along with a suitable name for the Snapshot. This Snapshot Location is used together with the Snapshot Name to identify it to the user on the Front Panel. It is also used as a reference for recall using the 3rd Party UDP Control Protocol, which can be commanded from most network devices that can transmit custom UDP Messages, for example Crestron™ Remotes.
+
+.. image:: assets/images/operation_manual/5/storeglobal.png
+    :align: center
+
+|
+
+.. note::
+     The software will show an error [mixed snapshots] in the ‘Snapshot slot’ list if snapshots with different names are stored in the same slot in multiple amplifiers.
+
+.. image:: assets/images/operation_manual/5/snapshotslot.png
+    :align: center
+
+|
+
+.. note::
+    As the popup states, when the Snapshots are stored, the audio will be muted temporarily as the memory is accessed. For this reason, it is vital not to store Snapshots during a show! 
+
+
+When the Store operation is complete the following message will be displayed in the lower right-hand side of the LINUS Control Workspace:
+    
+.. image:: assets/images/operation_manual/5/successfullstoreglobalsnapshot.png
+    :align: center
+
+|
+
+If you then make alterations such as Tuning Parameters / Loudspeakers / Routing etc. in the LINUS Control show file, you can then store a new snapshot in a new location. This makes it quick and easy to recall settings from the front panel of different offline ‘States’ of the LINUS Control show.
+
+Scenario B).  Rental Company
+This feature helps to improve what rental companies can offer their customers. A hire company may wish to send out small systems with operators who do not wish to use the LINUS Control software and just want to recall the setup from the Front Panel.
+
+Prior to dispatching the equipment, the hire company can configure the different smaller systems that are used and save these as Snapshots, so the end user only needs to choose a Snapshot and Recall it from the Front Panel.
+
+Example – 2x HOPS8 on 2x G15 Subs.
+Firstly, the Loudspeakers are assigned to the Amplifier:
+
+.. image:: assets/images/operation_manual/5/inputroutingassign.png
+    :align: center
+
+|
+
+The input routing is then assigned:
+
+.. image:: assets/images/operation_manual/5/inputroutingassign.png
+    :align: center
+
+|
+
+A Tuning Group is then assigned to the G15 Subs, in order to add the 2.2ms coplanar delay (this is easy to determine from the time alignment spreadsheet guide).
+
+.. image:: assets/images/operation_manual/5/tunninggroupassignedtog15.png
+    :align: center
+
+|
+
+The Snapshot should now be stored on this amplifier, to enable offline recall from the Front Panel on site.  Group Parameters (Gain / Delay / EQ etc. can be adjusted from the Front Panel without use of a computer).
+
+5.4. IP Address Range
++++++++++++++++++++++
+
+The LINUS Amplifiers & LINUS Control can exist in any IP Range & Subnet, they are not required to be in the 192.168.1.X range. 
+
+There is a limitation of 250 amplifiers on a network, for them to be controlled with LINUS Control, and the amplifiers are individually identified within LINUS Control by the last octet of their IP address. This means that it would be completely acceptable to have an IP / Subnet setting on the control computer of **192.168.10.250 / 255.255.0.0** with two amplifiers at **192.168.10.1** and **192.168.181.13**, but it would not be possible for there to be two amplifiers at **192.168.14.140** and **192.168.29.140**, as their last octets (.140) clash.
+
+The ID number in the top right of the LCD on the front panel of the amplifier / controllers always show the last octet of the IP address. 
+
+.. note::
+    Changing the IP address from the front panel will always change the amplifier back to the default 192.168.1.X range, where X is the ID number chosen from the front panel. To retain the custom IP Range, you must change the IP Address of the amplifier either through LINUS Control, or with the 3rd party control protocol.
+
+
+If you wish to change the amplifier to a custom range within LINUS Control, take a note of the current IP Address of the amplifier. Ensure that the subnet mask of the control computer will allow the LINUS Control application to talk to the amplifier; if this is set incorrectly, the amplifier may still be discovered by LINUS Control, however it will not be able to communicate. In this instance, you will see an error message in the discovery list as “not reachable”:
+
+.. image:: assets/images/operation_manual/5/networkconfigurationrequired.png
+    :align: center
+
+|
+
+With the IP and Subnet of the control computer set correctly, the device will be reachable and can be added to the workspace:
+
+.. image:: assets/images/operation_manual/5/batchreplace.png
+    :align: center
+
+|
+
+When the amplifier is added to the workspace, click the relevant **Configure IP button**, on the AMPS page. This will launch a dialog, where the IP Address of the amplifier can be adjusted.
+
+.. image:: assets/images/operation_manual/5/configip.png
+    :align: center
+
+|
+
+If the last octet of the new IP address is unchanged, the amplifier will show up on the workspace with the new IP. If not, it will show as offline on the workspace, and it will also show up as a newly discovered amplifier within the discovery list – it can then be replaced with the amplifier in the workspace using the standard method.
+
+.. note::
+    IP address 192.168.10.10 is reserved for the Firmware update channel, please avoid this IP on control surface and LINUS units.
+
+State Manager, please refer to section 8.5.
+
+
+
+.. image:: assets/images/operation_manual/5/storesnapshotstate.png
+    :align: center
+
+|
+
+5.5.  Speaker Check
++++++++++++++++++++++
+
+Speaker Check is a tool for checking loudspeaker connection lines and loudspeaker impedance when connected to LINUS14 and LINUS12C.
+
+.. image:: assets/images/operation_manual/5/speakercheck.png
+    :align: center
+
+|
+
+5.5.1.Start Speaker Check application  
+**************************************
+
+.. image:: assets/images/operation_manual/5/speakercheckapplication.png
+    :align: center
+
+|
+
+5.5.2. Speaker Check overview 
+******************************
+
+.. image:: assets/images/operation_manual/5/speakercheckoverview.png
+    :align: center
+
+|
+
+5.5.3. Speaker Check Setup  
+******************************
+
+    1. Define the speakers in the setup section first
+    2. Select the amplifier on which you would like to run the Speaker Check application
+    3. Select amplifier channels that should run the Speaker Check
+
+
+*Example shows Speaker Check activated for CH1 (loaded speaker: D5) and CH3 (loaded speaker HOPS5)*
+
+.. image:: assets/images/operation_manual/5/speakerchecksetup.png
+    :align: center
+
+|
+
+4. Connect amplifier channels with the loudspeaker and press “Measure”.
+At this point you may hear the sine wave generator running (at -35dB / 30Hz) at a low level.
+The selected channels will be measured one by one, consecutively (measurement per channel takes roughly 3 seconds).
+
+Example shows a performed measurement value for the selected channels in the column “R Result”
+
+The R Result value represents the impedance (Ohms) of the speaker measured at 30Hz, combined with the impedance of the loudspeaker cable.
+
+In this example: 
+Channel 1: D5 + 10m/ 2x4mm2 loudspeaker cable = 3.8 Ohm
+Channel 3: HOPS5 + 20m/ 2x4mm2 loudspeaker cable = 3.2 Ohm
+
+.. image:: assets/images/operation_manual/5/speakercheckmesure.png
+    :align: center
+
+|
+
+
+5.5.4. Speaker Check R Min and R Max   
+*************************************
+
+The R Min and R Max values can be defined after you have performed a Speaker Check measurement.
+These will give the threshold for further indicators.
+It is recommended to run the Speaker Check measurement at least four times in a row and to monitor the R Result values in that time frame. This simulates a real operation with a warmed up speaker voice coil.
+
+A basic recommendation for the R Min and R Max values are:
+R Min -0.2 Ohm from R Result value
+R Max +0.2 Ohm added to R Result value
+
+This example shows the defined R Min and R Max values:
+Channel 1: D5 + 10m/ 2x4mm2 loudspeaker cable = 3.8 Ohm 
+Recommended R Min Value = 3.6 Ohm
+Recommended R Max Value = 4.0 Ohm
+
+Channel 3: HOPS5 + 20m/ 2x4mm2 loudspeaker cable = 3.2 Ohm
+Recommended R Min Value = 3.0 Ohm
+Recommended R Max Value = 3.4 Ohm
+
+.. image:: assets/images/operation_manual/5/speakercheckmesure2.png
+    :align: center
+
+|
+
+.. note::
+    The R Result values are dependent on many factors and may vary due to cable type and environmental conditions. Therefore, multiple measurements are recommended to define the ideal R Min and R Max threshold values.
+
+5.5.5. Speaker Check Indicator    
+******************************
+
+The Speaker Check application indicates whether the speaker is connected or not. 
+Once the R Min and R Max values are defined, you will see the following information:
+
+R Result represents a value which is within the defined R Min and R Max threshold. A green dot means the loudspeaker is connected.
+
+.. image:: assets/images/operation_manual/5/speakercheckindicator1.png
+    :align: center
+
+|
+
+R Result shows a value which is slightly out of the defined R Min and R Max threshold (red dot). Repeat the measurement (a minimum of four times) and readjust the R Min or R Max values.
+
+.. image:: assets/images/operation_manual/5/speakercheckindicator2.png
+    :align: center
+
+|
+
+R Result shows a value which is far outside of the defined R Min and R Max threshold (red dot). This means the loudspeaker is not connected
+
+.. image:: assets/images/operation_manual/5/speakercheckindicator3.png
+    :align: center
+
+|
+
+5.5.6. Speaker Check Indicator AMPS Section 
+*******************************************
+.. |refresh| image::  assets/images/operation_manual/5/reloadbutton.png
+    :width: 20
+
+Speaker Check can be performed on all activated and defined LINUS14 and LINUS12C devices which are connected to the LINUS Control Network.
+In the AMPS section you can take a global measurement by pressing the reload |refresh| button.
+
+.. image:: assets/images/operation_manual/5/speakercheckindicatorampsection.png
+    :align: center
+
+|
+
+.. note::
+    Speaker Check performs a global measurement on all amplifiers at the same time (one by one, each activated channel requires a maximum of four measurements, each channel taking around 3 seconds), independent of whether the channel mutes are activated or not.  We recommend carrying out this global measurement in a time frame where no audience is present and not during a show, as the sine wave signal will be audible on loudspeakers with low frequency output (for example, subs or full-range speakers).
+
+Once the global Speaker Check has been performed, the following indications will be displayed:
+
+Green = all Channels with activated Speaker Check are within the R Min and R Max threshold:
+
+.. image:: assets/images/operation_manual/5/speakercheckindicatormaxthreshold.png
+    :align: center
+
+|
+
+Red = One or more channels are out of the defined R Min and R Max threshold values.
+
+This means two possible causes:
+    1. The loudspeaker is not connected. (Check the loudspeaker and its connection to the amplifier channel.)
+    2. R Result measurement is slightly out of the defined R Min and R Max threshold value.
+
+(Redefine R Min and R Max threshold values.)
+
+
+.. image:: assets/images/operation_manual/5/speakersetupcheck.png
+    :align: center
+
+|
+
+.. note::
+    Speaker Check setup is stored on each defined amplifier and **not** in the Show File.
+
+5.6. Clear Global 
++++++++++++++++++++
+To clear ALL snapshots in ALL online amplifiers on the network, press the “Clear all Snapshots” button, then confirm this action with the confirmation message that pops up. Ensure you wish to do this before confirming.  
+
+.. image:: assets/images/operation_manual/5/clearallsnapshot.png
+    :align: center
+
+|
+
+5.7.  Global set to defaults
+++++++++++++++++++++++++++++
+
+On the AMPS page, a button can be found to launch the “Global set to defaults” dialog:
+
+.. image:: assets/images/operation_manual/5/globalsettodefault.png
+    :align: center
+
+|
+
+When pressed, the following dialog will be presented.  This dialog allows the user to determine which (if any) parameters they would like reset to their default values.  This is particularly useful in touring scenarios, where it is desirable to use the same LINUS Control show file from the previous day, but the tuning data is best to be reset to zero.
+
+.. |selectallicon| image::  assets/images/operation_manual/5/selectallicon.png
+    :width: 100
+
+Pressing |selectallicon|  will allow all parameters below this to be defaulted, whilst preserving the amplifier names, fallback states, routing and polarity information.
+
+.. image:: assets/images/operation_manual/5/globalsettodefaultdetails.png
+    :align: center
+
+|
+
+5.8. Locking
++++++++++++++
+
+It is possible to lock the Amplifiers from LINUS Control.  There are two levels of locking; 
+
+    • Display Lock prevents casual changes being made to the amplifier’s front panels.  The Display Lock can be reset by pressing both the CH1 select button and the STORE button simultaneously.
+
+    • Unit Lock are there to keep you from making unwanted changes. It allows mutes to be toggled on the front panel, but prevents parameters being changed from the Front Panel.  A password (PIN Code) is needed to unlock the amplifier.  The password can be any number, up to 5 digits long.  The PIN can be entered from either the Front Panel, or from the LINUS Control software.
+
+.. note::
+      On LINUS 14 / CON / 10/ 12C, the Display Lock can be reset by pressing both the CH1 select button and the STORE button simultaneously
+
+.. note::
+     In the event of the PIN code being lost, please contact techsupport@codaaudio.com detailing the scenario that has led to the loss of the PIN Code, together with information that substantiates your request for the PIN code to be reset, and instructions will be given. In the situation with an installed system, the local distributor / dealer and installation consultants / contractors will be contacted first to establish the authenticity of the PIN code reset.
+
+To access the amplifier locking dialog, press the relevant padlock icon on the amplifier entry on the AMPS page:
+
+.. image:: assets/images/operation_manual/5/lockingamppage.png
+    :align: center
+
+|
+
+The following dialog will be shown:
+
+.. image:: assets/images/operation_manual/5/lockingdialogshow.png
+    :align: center
+
+|
+
+Pressing the (Lock) button to the right of the Display Lock text will toggle the display lock state of the relevant amplifier. An ‘L’ or ‘Padlock’ icon will be displayed on the amplifier’s LCD display. 
+
+Pressing the (Lock) button to the right of the Unit Lock text will present the following dialog, where a password can be set. (This should be numeric, of any value from 0 to 99999 inclusively):
+
+.. image:: assets/images/operation_manual/5/unitlock.png
+    :align: center
+
+|
+
+When the lock is set, the icon will change to (Unlock) shown below:
+
+.. image:: assets/images/operation_manual/5/lock_unlock.png
+    :align: center
+
+|
+
+To unlock the amplifier, press this (Unlock) button, then enter the password into the dialog that is presented:
+
+.. image:: assets/images/operation_manual/5/unlock.png
+    :align: center
+
+|
+

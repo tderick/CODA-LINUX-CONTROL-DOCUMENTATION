@@ -712,3 +712,6 @@ Waking up the amplifier can be done in the AMPS page or in the SETUP page, simpl
     :align: center
 
 |
+
+5. AMPS Page 
+-------------

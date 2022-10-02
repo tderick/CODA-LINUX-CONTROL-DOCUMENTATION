@@ -1262,3 +1262,77 @@ The filters can be manipulated within the PEQ graph by clicking on the filter po
     :align: center
 
 |
+
+7. Monitor Page
+----------------
+The monitor page provides a detailed view primarily of the metering data for a selected amplifier. By clicking on an amplifier in the workspace the window below will display following:
+
+.. image:: assets/images/operation_manual/7/monitorpage.png
+    :align: center
+
+|
+
+7.1.  Input Meters
+++++++++++++++++++
+The leftmost 4x meters (2x if LINUS10) are the input meters.
+The label underneath each input meter shows you which input is being monitored, and routed to the respective channel. Peak level is shown in the centre, with the calculated effective RMS power level shown either side:
+
+.. image:: assets/images/operation_manual/7/inputmeter.png
+    :align: center
+
+|
+
+If the input meters are hitting the top (turning orange or red), and the loudspeakers are not in gain reduction, it would be best to assess the gain structure of the system to prevent overloading or overshooting the input stage, which can damage speakers. Attenuate the input signal and increase the system gain. We don’t recommend that you clip the analogue inputs, it’s not a sign of intellect!
+
+Amplifier user manuals should be consulted for the latest information, however for reference, the maximum input levels are shown here:
+
+
+.. list-table::
+    :widths: 50 150
+    :header-rows: 1
+    :align: center
+
+    * - Model
+      - Max input level (analogue differential)
+
+    * - LINUS14
+      - +18 dBu / 6.15 Vrms / 17.4 Vp-p
+
+    * - LINUS CON
+      - +18 dBu / 6.15 Vrms / 17.4 Vp-p
+    
+    * - LINUS10
+      - +21 dBu / 8.69 Vrms / 24.6 Vp-p
+    
+    * - LINUS12-C
+      - +18 dBu / 6.15 Vrms / 17.4 Vp-p
+
+    * - LINUS10-C
+      - +15 dBu / 4.36 Vrms / 12.3 Vp-p
+    
+    * - LINUS5-C
+      - +15 dBu / 4.36 Vrms / 12.3 Vp-p
+
+.. note::
+    The amplifiers operate internally at 32bit with double precision, which represents a massive internal dynamic range, so it is almost impossible to run out of headroom within the digital signal path inside the amplifier. It would be very beneficial to pay close attention to the gain structure of the system to get the best possible results in each given deployment.
+
+
+7.2.  Output Meters
++++++++++++++++++++
+
+The output meters are drawn to the right of the monitor window. The output meter comprises three areas, the output level (peak and RMS), the limiter gain reduction activity (peak and thermal) and in the lower section the current indication.
+
+.. image:: assets/images/operation_manual/7/outputmetter.png
+    :align: center
+
+|
+
+7.3.  Group Meters
++++++++++++++++++++
+
+Global input and output meter indication of a group and its assigned channels
+
+.. image:: assets/images/operation_manual/7/groupmeter.png
+    :align: center
+
+|

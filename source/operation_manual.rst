@@ -1336,3 +1336,242 @@ Global input and output meter indication of a group and its assigned channels
     :align: center
 
 |
+
+8. Amplifier Discovery
+----------------------
+
+8.1.  Network Scanning
+++++++++++++++++++++++
+
+When LINUS Control is taken Online, it will search for all amplifiers on the network. It will do one of two things with these amplifiers, either mark them as ‘Online’ in the workspace providing certain criteria are met, or place them in the discovery list.
+
+Criteria for marking them as ‘Online’:
+
+    • The ID Matches
+    • The Loudspeaker Files match on all channels
+    • The Amplifier has not had a snapshot recalled from the Front Panel.
+
+If these tests are all true, it will be marked ‘Online’ and the tuning data presented in the show file (Group Assignments / Gain / Delay / Filters / Routing etc) will be pushed to the Amplifier.
+
+These tests are a fallback, preventing mistakes arising in the operation of the software during a show, which would otherwise result in the changing or loss of audio. Make sure everything goes smoothly during your show.
+
+If any of these tests are not carried out, the Amplifier will be put in the ‘discovery list’. The presence of amplifiers in the ‘discovery list’ is announced in the bottom taskbar.  Clicking the icon will result in the ‘discovery list’ being displayed.
+
+.. image:: assets/images/operation_manual/8/amplifierdiscovered.png
+    :align: center
+
+|
+
+Click the “Amplifiers Discovered” annunciation to see the discovery list:
+
+.. image:: assets/images/operation_manual/8/discoverylist.png
+    :align: center
+
+|
+
+The “add all to workspace” button will add the amplifiers that were discovered on the network to the workspace. As the confirmation popup dialog suggests, this will clear the amplifier's active state and mute the outputs.
+
+.. image:: assets/images/operation_manual/8/adddiscoveredtoallamplified.png
+    :align: center
+
+|
+
+The “Conform All” button will replace all amplifiers of a given ID within the workspace with amplifiers in the discovery list with the same ID, if the amplifier in the workspace has loudspeakers assigned that are compatible with the amplifier in the discovery list.
+
+
+8.2.  ID Conflicts
++++++++++++++++++++
+
+If there are one or more amplifiers in the discovery list that fail one or more of the tests described in section 8.1, an ID conflict is recognised.  In this instance, it is not possible to ‘Add all to workspace’.  Instead you have two choices:
+
+    • Add more substitute ‘virtual’ amplifiers to the workspace, then replace the discovered ones with these, or:
+    • Replace one of the amplifiers discovered with another one already in the workspace.
+
+.. image:: assets/images/operation_manual/8/idconflit.png
+    :align: center
+
+|
+
+
+
+8.3.  Matching the discovery list with the workspace
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+In this example, we have two virtual amplifiers in the workspace, which we want to replace with amplifiers found on the network.  Go Online, then Click the discovery list button in the bottom taskbar:
+
+.. image:: assets/images/operation_manual/8/matchingdiscoverylistwithinput.png
+    :align: center
+
+|
+
+The discovery list is now open & we can see the two amplifiers that were found on the network.  Press the circle on the left of the amplifier in the discovery list that you wish to use as the replacement.
+
+.. image:: assets/images/operation_manual/8/discoverylistopen.png
+    :align: center
+
+|
+
+Select the destination amplifier in the workspace that you would like the replacement in the discovery list to take over from.  This amplifier can either be virtual, or online.  If it is an online amplifier that is chosen as the destination, after the replacement is confirmed, this amplifier will itself then return to the discovery list. 
+
+.. image:: assets/images/operation_manual/8/discoverylistopen2.png
+    :align: center
+
+|
+
+Press the ‘arrow’ button to confirm and complete the replacement
+
+.. image:: assets/images/operation_manual/8/discoverylistopen3.png
+    :align: center
+
+|
+
+8.4.  Autosave
++++++++++++++++
+
+An autosave function keeps your tweaks and changes safe. Show files will also be autosaved to the user’s home directory in a folder called \LINUS Control every 10 minutes.  A new file is created periodically, every 10 minutes.
+ 
+We recommend that you do not solely rely on these autosaved files, take manual backups of the show file at key times during the working day, the same as you would for mixing consoles or other equipment, this will mitigate against any possible downtime or other outages. 
+
+8.5.  State Manager
++++++++++++++++++++
+
+The entire LINUS Control file can be stored within the amplifier(s) on the network themselves, then recalled at a later date. This enables the user to recall the state of the network to a completely new machine, without having access to a LINUS Control file. The entire state of the LINUS Control file is stored, not just the individual amplifier’s parameters within this file, and it is possible to recover the entire show file comprising all 250 amplifier’s worth of data, tuning group, and more from just one amplifier.
+
+The state is stored to the online amplifier(s) from the AMPS Page.
+The state is recalled from an amplifier, either from the discovery list, or from the AMPS Page.
+ 
+.. note::
+    The storing of the state is a manual operation that should be performed when the system engineer or commissioning individual is happy with the current state of the system. Storing the state interrupts the audio signal briefly, so should not be performed during a show.
+
+The current state stored within an online Amplifier is shown on the AMPS page.  If the state that is stored within the Amplifier matches exactly that of the current state of LINUS Control, the state name is shown with a blue background, and with a ‘tick’ mark next to it:
+
+.. image:: assets/images/operation_manual/8/statemanager1.png
+    :align: center
+
+|
+
+Otherwise, the state will be shown in grey, without the ‘tick’ mark:
+
+.. image:: assets/images/operation_manual/8/statemanager2.png
+    :align: center
+
+|
+
+In all cases, whenever there is a state stored within the amplifier, the name of the state is stored within the ‘State’ button, and the date and time of the store is shown to the right of this. 
+
+To store the state of the LINUS Control file to an amplifier, click the State button on the AMPS page; this will present the “State Manager” dialog. You will either be able to store the state to just the one device, or to all devices globally.  The picture below shows an amplifier that does not already contain a state:
+
+.. image:: assets/images/operation_manual/8/statemanagerwindow.png
+    :align: center
+
+|
+
+The picture below shows an amplifier that contains an example state, entitled “My State”, stored on March the 24th 2021 at 14:38. It also shows that this state was stored with LINUS Control v2.2:
+
+.. image:: assets/images/operation_manual/8/statemanagerdetailswindow.png
+    :align: center
+
+|
+
+Clicking & confirming the ‘Clear state’ button, will clear the state from that individual amplifier. 
+
+Clicking the ‘Store state’ or ‘Store global state’ button will present the following dialog, where you can enter a name for the state store. You will also see a reminder that continuing by clicking ‘Store state’ will mute audio for a moment, whilst the operation is invoked.
+
+.. image:: assets/images/operation_manual/8/statemanagerwrongstate.png
+    :align: center
+
+|
+
+As mentioned previously, the state can either be recalled from one of the amplifiers in the AMPS page, or from the discovery list, from an amplifier that is not yet in the workspace:
+
+.. image:: assets/images/operation_manual/8/batchreplace.png
+    :align: center
+
+|
+
+9. Reference - Amplifier Icons
+------------------------------
+
+    • The Amplifier icon is divided into three areas. 
+    • These areas are independent of each other. 
+    • Network related indications are on the left (Network Area). 
+    • The amp ID number is always displayed here.
+    • Input signal format and signal related events are on the right (Input Signal Area)
+    • The middle (Detail) area in the amplifier is where conditions are displayed, depending on the user's choice from a dropdown menu in the host program. 
+
+.. image:: assets/images/operation_manual/9/dropdownmenu.png
+    :align: center
+
+|
+
+
+.. image:: assets/images/operation_manual/9/amplifiericons.png
+    :align: center
+
+|
+
+
+10. References – Keyboard Shortcuts
+------------------------------------
+
+Keyboard shortcuts have been implemented to enable the user to reach the required screen as fast as possible. The shortcuts are disabled when typing values into either name fields or numerical fields. 
+
+
+.. list-table::
+    :widths: 150 25
+    :header-rows: 1
+    :align: center
+
+    * - Action
+      - Shortcut
+    
+    * - Amplifier detail view / display amplifier type
+      - 1
+    
+    * - Amplifier detail View / display amplifier ID and IP address
+      - 2
+    
+    * - Amplifier detail View / display amplifier name
+      - 3
+      
+    * - Amplifier detail View / display output loudspeaker assignments
+      - 4
+      
+    * - Amplifier detail View / display amplifier input routing and levels
+      - 5
+    
+    * - Amplifier detail View / display mute buttons and output levels 
+      - 6
+    
+    * - Amplifier detail View / display the output channel combined gain
+      - 7
+      
+    * - Amplifier detail View / display the output channel combined delay
+      - 8
+    
+    * - Workspace view / setup page
+      - S
+    
+    * - Workspace view / amplifier page
+      - A
+    
+    * - Workspace view / tuning page
+      - T
+    
+    * - Workspace view / monitor page
+      - M
+      
+    * - Add Amplifier to workspace
+      - Cmd ++ F
+      
+    * - Add Group to workspace
+      - Cmd + G
+    
+    * - Select all items in workspace
+      - "Cmd + A"
+      
+    * - Delete selected item
+      - Backspace / Del
+
+
+

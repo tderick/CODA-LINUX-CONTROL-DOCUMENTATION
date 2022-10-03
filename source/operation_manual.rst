@@ -1516,30 +1516,30 @@ As mentioned previously, the state can either be recalled from one of the amplif
 
 Keyboard shortcuts have been implemented to enable the user to reach the required screen as fast as possible. The shortcuts are disabled when typing values into either name fields or numerical fields. 
 
-
 .. list-table::
-    :widths: 150 25
+    :widths: 150 50
     :header-rows: 1
     :align: center
 
     * - Action
       - Shortcut
-    
+
     * - Amplifier detail view / display amplifier type
       - 1
-    
+
     * - Amplifier detail View / display amplifier ID and IP address
       - 2
-    
+
     * - Amplifier detail View / display amplifier name
       - 3
-      
+
     * - Amplifier detail View / display output loudspeaker assignments
       - 4
-      
+
     * - Amplifier detail View / display amplifier input routing and levels
       - 5
-    
+
+     
     * - Amplifier detail View / display mute buttons and output levels 
       - 6
     
@@ -1548,30 +1548,65 @@ Keyboard shortcuts have been implemented to enable the user to reach the require
       
     * - Amplifier detail View / display the output channel combined delay
       - 8
-    
+
     * - Workspace view / setup page
       - S
+
+.. .. list-table::
+..     :widths: 200 25
+..     :header-rows: 1
+..     :align: center
+
+..     * - Action
+..       - Shortcut
     
-    * - Workspace view / amplifier page
-      - A
+..     * - Amplifier detail view / display amplifier type
+..       - 1
     
-    * - Workspace view / tuning page
-      - T
+..     * - Amplifier detail View / display amplifier ID and IP address
+..       - 2
     
-    * - Workspace view / monitor page
-      - M
+    .. * - Amplifier detail View / display amplifier name
+    ..   - 3
       
-    * - Add Amplifier to workspace
-      - Cmd ++ F
+    .. * - Amplifier detail View / display output loudspeaker assignments
+    ..   - 4
       
-    * - Add Group to workspace
-      - Cmd + G
+    .. * - Amplifier detail View / display amplifier input routing and levels
+    ..   - 5
     
-    * - Select all items in workspace
-      - "Cmd + A"
+    .. * - Amplifier detail View / display mute buttons and output levels 
+    ..   - 6
+    
+    .. * - Amplifier detail View / display the output channel combined gain
+    ..   - 7
       
-    * - Delete selected item
-      - Backspace / Del
+    .. * - Amplifier detail View / display the output channel combined delay
+    ..   - 8
+    
+    .. * - Workspace view / setup page
+    ..   - S
+    
+    .. * - Workspace view / amplifier page
+    ..   - A
+    
+    .. * - Workspace view / tuning page
+    ..   - T
+    
+    .. * - Workspace view / monitor page
+    ..   - M
+      
+    .. * - Add Amplifier to workspace
+    ..   - Cmd + F
+      
+    .. * - Add Group to workspace
+    ..   - Cmd + G
+    
+    .. * - Select all items in workspace
+    ..   - "Cmd + A"
+      
+    .. * - Delete selected item
+    ..   - Backspace / Del
 
 
 

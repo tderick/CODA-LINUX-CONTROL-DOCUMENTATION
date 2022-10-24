@@ -18,7 +18,6 @@ Table of Contents
 =================
 
 .. toctree::
-   :maxdepth: 6
 
   operation_manual
   known_issues
@@ -26,12 +25,8 @@ Table of Contents
   third_party_control
   time_alignment
   update_procedure
+  loudspeaker_file_list
    
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 

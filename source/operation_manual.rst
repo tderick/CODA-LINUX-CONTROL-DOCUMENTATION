@@ -75,7 +75,6 @@ In order to use Chrome to control the backend server, follow these steps:
 .. Remote Access
 .. image:: assets/images/operation_manual/1/remote_access.png
     :alt: Remote Access
-    :width: 500
     :align: center
 
 
@@ -87,7 +86,6 @@ In order to use Chrome to control the backend server, follow these steps:
 .. VNC client
 .. image:: assets/images/operation_manual/1/vnc_client.png
     :alt: VNC client
-    :width: 500
     :align: center
 
 * In this example, 192.168.1.250 would be the IP address of the host machine.
@@ -261,7 +259,6 @@ The output meters are calibrated in dB relative to the loudspeaker’s full RMS 
 
 .. image:: assets/images/operation_manual/2/outputmeter.png
     :align: center
-    :width: 500
 
 |
 
@@ -273,7 +270,6 @@ To the right of each amplifier icon, a gain reduction meter is drawn. This shows
 
 .. image:: assets/images/operation_manual/2/gainreductionmeter.png
     :align: center
-    :width: 500
 
 |
 
@@ -284,7 +280,6 @@ For each channel, the combined sum of all the group gains is displayed.
 
 .. image:: assets/images/operation_manual/2/gain.png
     :align: center
-    :width: 400
 
 2.4.8. Delay 
 ************
@@ -292,7 +287,6 @@ For each channel, the combined sum of all the group delays is displayed.
 
 .. image:: assets/images/operation_manual/2/delay.png
     :align: center
-    :width: 400
 
 |
 
@@ -303,7 +297,6 @@ Red is muted, white is unmuted.
 
 .. image:: assets/images/operation_manual/2/mastermute.png
     :align: center
-    :width: 200
 
 |
 
@@ -313,7 +306,6 @@ This button toggles the software Online & Offline.
 
 .. image:: assets/images/operation_manual/2/offline_online.png
     :align: center
-    :width: 300
 
 |
 
@@ -327,13 +319,11 @@ This button |default|  toggles View presets. Custom View presets can be created,
 
 .. image:: assets/images/operation_manual/2/default.png
     :align: center
-    :width: 200
 
 |
 
 .. image:: assets/images/operation_manual/2/default_details.png
     :align: center
-    :width: 300
 
 |
 
@@ -651,10 +641,16 @@ Choose “Analog” or “Digital”:
     • Click the ‘Ticks’ to patch the Inputs to the Outputs
     • The Output Polarity buttons are the toggle switches to the right of the Outputs
 
-.. image:: assets/images/operation_manual/4/outputpolarity.png
+.. image:: assets/images/operation_manual/4/outputpolarity11.png
     :align: center
 
-.. image:: assets/images/operation_manual/4/outputpolarity2.png
+.. image:: assets/images/operation_manual/4/outputpolarity12.png
+    :align: center
+.. image:: assets/images/operation_manual/4/outputpolarity13.png
+    :align: center
+
+
+.. image:: assets/images/operation_manual/4/outputpolarity14.png
     :align: center
 
 |
@@ -808,7 +804,7 @@ Prior to dispatching the equipment, the hire company can configure the different
 Example – 2x HOPS8 on 2x G15 Subs.
 Firstly, the Loudspeakers are assigned to the Amplifier:
 
-.. image:: assets/images/operation_manual/5/inputroutingassign.png
+.. image:: assets/images/operation_manual/5/loudspeakertoamplifier.png
     :align: center
 
 |
@@ -1506,6 +1502,21 @@ As mentioned previously, the state can either be recalled from one of the amplif
 
 
 .. image:: assets/images/operation_manual/9/amplifiericons.png
+    :align: center
+
+|
+
+.. image:: assets/images/operation_manual/9/amplifiericons2.png
+    :align: center
+
+|
+
+.. image:: assets/images/operation_manual/9/amplifiericons3.png
+    :align: center
+
+|
+
+.. image:: assets/images/operation_manual/9/amplifiericons4.png
     :align: center
 
 |

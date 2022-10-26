@@ -22,15 +22,14 @@ Whilst the individual devices are fitted with 100Mb/s interfaces, larger network
 
 For optimum performance, ensure all LINUS IDs are unique on the network prior to connecting network infrastructure.  A star network topology should be used where practical. It is however generally possible to link (daisy-chain) up to six devices on a node. Further daisy-chaining may be possible, but should be tested to ensure reliable communication for the specific deployment. The Dante ports on the LINUS14D should (in most cases) be connected to a ‘distributed star’ topology network. Careful attention should be paid to ensure the minimum number of ‘switch hops’ between the transmitter & receivers, or the latency setting will need to be increased appropriately to guarantee network stability. 
 
-.. code-block::
 
-    Network protocol
-    Protocol types: TCP, UDP
-    Ports: 3000, 3001, 3011, 800, 8001
-    Multicast address: Broadcast 255.255.255.255
-    QoS Requirement: No
-    Bandwidth: Ca. 16kb per device 
-    DANTE: Channel and sample rate depending, please refer to Audinate's specification
+| Network protocol
+| **Protocol types**: TCP, UDP
+| **Ports**: 3000, 3001, 3011, 800, 8001
+| **Multicast address**: Broadcast 255.255.255.255
+| **QoS Requirement**: No
+| **Bandwidth**: Ca. 16kb per device 
+| **DANTE**: Channel and sample rate depending, please refer to Audinate's specification
 
 1.2. Amplifier ID Numbers & IP Schema
 ++++++++++++++++++++++++++++++++++++++

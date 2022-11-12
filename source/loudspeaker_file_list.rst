@@ -6,34 +6,8 @@ Loudspeaker File List
 
 Not all loudspeakers are permitted on all amplifiers. A couple of factors dictate this; some loudspeakers require sensor control, which is not fitted to LINUS5-C, LINUS10-C and LINUS12C. Some loudspeakers require more power than certain amplifiers can provide. The table below details which loudspeakers are permissible on the various amplifier types. New additions bundled in this version are highlighted in purple.
 
-.. image:: assets/images/loudspeakerfiles/1/permissive1.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/1/permissive2.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/1/permissive3.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/1/permissive4.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/1/permissive5.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/1/permissive6.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/1/permissive7.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/1/permissive8.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/1/permissive9.png
-    :align: center
-
-|
+.. raw:: html
+    :file: speaker_file_permissibility.html
 
 2. Loudspeaker file defaults
 -----------------------------
@@ -72,3 +46,5 @@ Files marked with an asterisk can however be loaded into the amplifier however,s
     :align: center
 
 |
+
+

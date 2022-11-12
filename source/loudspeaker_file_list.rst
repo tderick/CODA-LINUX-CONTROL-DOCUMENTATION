@@ -16,35 +16,6 @@ Amplifiers contain a finite amount of storage locations. The list below details 
 
 Files marked with an asterisk can however be loaded into the amplifier however,simply by choosing the preset within LINUS Control. To save them permanently to the amplifier, create a snapshot that includes the file & it will then be accessible from the Front Panel.
 
-
-
-.. image:: assets/images/loudspeakerfiles/2/filedefault1.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/2/filedefault2.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/2/filedefault3.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/2/filedefault4.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/2/filedefault5.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/2/filedefault6.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/2/filedefault7.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/2/filedefault8.png
-    :align: center
-
-.. image:: assets/images/loudspeakerfiles/2/filedefault9.png
-    :align: center
-
-|
-
+.. raw:: html
+    :file: speaker_file_defaults.html
 

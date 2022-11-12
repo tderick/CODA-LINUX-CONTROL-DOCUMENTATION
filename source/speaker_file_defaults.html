@@ -1,11 +1,10 @@
 <style>
-
-td{
-padding: 10px;
-padding-right: 20px;
-border-right: 1px solid black;
-vertical-align: middle;
-text-align: center;
+    td{
+	padding: 10px;
+	padding-right: 20px;
+	border-right: 1px solid black;
+    vertical-align: middle;
+    text-align: center;
 }
 th{
 	padding: 10px;
@@ -15,7 +14,7 @@ th{
 table{
 	border-collapse: collapse;
  }
-.permis{
+.panel{
     background-color: lightblue;
 }
 .t1 {
@@ -27,6 +26,10 @@ table{
 .t3b {
     vertical-align: middle;
     background-color: lightgreen;      
+}
+.t3c {
+    vertical-align: middle;
+    background-color: oldlace;      
 }
 .space{
     background-color: silver;
@@ -41,10 +44,10 @@ table{
                     <th></th>
                     <th></th>
                     <th></th>
-                    <th class="permis"></th>
-                    <th class="permis"></th>
-                    <th class="permis"></th>
-                    <th class="permis">PERMISSIBLE ON:</th>
+                    <th class="panel"></th>
+                    <th class="panel"></th>
+                    <th class="panel"></th>
+                    <th class="panel">FRONT PANEL DEFAULT? </th>
                 </tr>
             </thead>
             <thead>
@@ -83,8 +86,8 @@ table{
                     <td>2WAY Array 90º>></td>
                     <td class="t3a">N</td>
                     <td class="t3a">N</td>
-                    <td class="t3b">Y</td>
-                    <td class="t3b">Y</td>
+                    <td class="t3c">N*</td>
+                    <td class="t3c">N*</td>
                  </tr>
                  <tr>
                     <td class="t2">Line Array </td>
@@ -92,8 +95,8 @@ table{
                     <td>2WAY Array 120º>></td>
                     <td class="t3a">N</td>
                     <td class="t3a">N</td>
-                    <td class="t3b">Y</td>
-                    <td class="t3b">Y</td>
+                    <td class="t3c">N*</td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -119,18 +122,18 @@ table{
                         <td class="t2">ViRAY </td>
                         <td>2WAY Single </td>
                         <td class="t3a">N</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">Line Array </td>
                         <td class="t2">ViRAY </td>
                         <td>2WAY Array>> </td>
                         <td class="t3a">N</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">Line Array </td>
@@ -146,9 +149,9 @@ table{
                         <td class="t2">ViRAY </td>
                         <td>Single </td>
                         <td class="t3a">N</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -174,27 +177,27 @@ table{
                         <td class="t2">N-RAY   </td>
                         <td>Array 120º </td>
                         <td class="t3a">N</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">Line Array </td>
                         <td class="t2">N-RAY   </td>
                         <td>Array 90º>> </td>
                         <td class="t3a">N</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">Line Array </td>
                         <td class="t2">N-RAY   </td>
                         <td>Array 120º>> </td>
                         <td class="t3a">N</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -219,10 +222,10 @@ table{
                         <td class="t2">Line Array </td>
                         <td class="t2">TiRAY  </td>
                         <td>Single> </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -239,9 +242,9 @@ table{
                         <td class="t2">APS  </td>
                         <td>Arrayed  </td>
                         <td class="t3a">N</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
@@ -275,18 +278,18 @@ table{
                         <td class="t2">APS  </td>
                         <td>Arrayed >> </td>
                         <td class="t3a">N</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">APS  </td>
                         <td>Single >> </td>
                         <td class="t3a">N</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -302,43 +305,43 @@ table{
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Arrayed  </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Crossover Arrayed </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Single </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Crossover Single </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Arrayed  </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
@@ -347,7 +350,7 @@ table{
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Crossover Arrayed > </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
@@ -356,55 +359,55 @@ table{
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Single > </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Crossover Single > </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Arrayed > </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Crossover Arrayed  >> </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Single >> </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">APS-Series </td>
                         <td class="t2">N-APS  </td>
                         <td>Crossover Single >> </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -493,10 +496,10 @@ table{
                         <td class="t2">HOPS-Series </td>
                         <td class="t2">HOPS8   </td>
                         <td>Crossover > </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -521,10 +524,10 @@ table{
                         <td class="t2">HOPS-Series </td>
                         <td class="t2">HOPS5   </td>
                         <td>Crossover > </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -537,7 +540,7 @@ table{
                 </tr>
 
                 <tr>
-                        <td class="t2">Column LineSource  </td>
+                        <td class="t2">Column Line-Source </td>
                         <td class="t2">CoRAY    </td>
                         <td>Single > </td>
                         <td class="t3b">Y</td>
@@ -546,7 +549,7 @@ table{
                         <td class="t3b">Y</td>
                 </tr>
                 <tr>
-                        <td class="t2">Column LineSource  </td>
+                        <td class="t2">Column Line-Source </td>
                         <td class="t2">CoRAY    </td>
                         <td>Arrayed >> </td>
                         <td class="t3b">Y</td>
@@ -568,19 +571,19 @@ table{
                         <td class="t2">G-Series </td>
                         <td class="t2">G308    </td>
                         <td>Fullrange > </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">G-Series </td>
                         <td class="t2">G308    </td>
                         <td>Crossover > </td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -606,7 +609,7 @@ table{
                         <td class="t2">G512    </td>
                         <td>Crossover > </td>
                         <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                 </tr>
@@ -634,7 +637,7 @@ table{
                         <td class="t2">G515    </td>
                         <td>Crossover > </td>
                         <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                 </tr>
@@ -652,14 +655,14 @@ table{
                         <td rowspan="2" class="t2">G-Series </td>
                         <td rowspan="2" class="t2">G712     </td>
                         <td>2WAY Fullrange > </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                 </tr>
                 <tr>
                         <td>2WAY Crossover > </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
@@ -668,14 +671,14 @@ table{
                         <td rowspan="2" class="t2">G-Series </td>
                         <td rowspan="2" class="t2">G712     </td>
                         <td>Fullrange > </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                 </tr>
                 <tr>
                         <td>Crossover > </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
@@ -694,14 +697,14 @@ table{
                         <td rowspan="2" class="t2">G-Series </td>
                         <td rowspan="2" class="t2">G715     </td>
                         <td>2WAY Fullrange > </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                 </tr>
                 <tr>
                         <td>2WAY Crossover > </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
@@ -710,14 +713,14 @@ table{
                         <td rowspan="2" class="t2">G-Series </td>
                         <td rowspan="2" class="t2">G715     </td>
                         <td>Fullrange > </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                 </tr>
                 <tr>
                         <td>Crossover > </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
@@ -756,18 +759,18 @@ table{
                         <td class="t2">D8     </td>
                         <td>Fullrange  > </td>
                         <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">D-Series </td>
                         <td class="t2">D8     </td>
                         <td>Crossover > </td>
                         <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -784,9 +787,9 @@ table{
                         <td class="t2">D10     </td>
                         <td>Fullrange  > </td>
                         <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -803,18 +806,18 @@ table{
                         <td class="t2">D12     </td>
                         <td>Fullrange  > </td>
                         <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">D-Series </td>
                         <td class="t2">D12     </td>
                         <td>Crossover > </td>
                         <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -831,9 +834,9 @@ table{
                         <td class="t2">D16     </td>
                         <td>Fullrange  > </td>
                         <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -850,7 +853,7 @@ table{
                         <td class="t2">D20     </td>
                         <td>Fullrange  > </td>
                         <td class="t3b">Y</td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                         <td class="t3b">Y</td>
                         <td class="t3b">Y</td>
                 </tr>
@@ -926,7 +929,7 @@ table{
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">Subwoofers  </td>
@@ -935,10 +938,10 @@ table{
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
+                        <tdcclass="t2"></td>
                         <td class="t2"></td>
                         <td></td>
                         <td></td>
@@ -1310,7 +1313,7 @@ table{
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">Subwoofers  </td>
@@ -1328,7 +1331,7 @@ table{
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">Subwoofers  </td>
@@ -1337,7 +1340,7 @@ table{
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">Subwoofers  </td>
@@ -1346,7 +1349,7 @@ table{
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
                         <td class="t3a">N </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -1418,7 +1421,7 @@ table{
                         <td class="t2">U-Sub        </td>
                         <td>U12 Omni130 </td>
                         <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
+                        <td class="t3c">N* </td>
                         <td class="t3b">Y </td>
                         <td class="t3b">Y</td>
                 </tr>
@@ -1426,19 +1429,19 @@ table{
                         <td class="t2">Subwoofers  </td>
                         <td class="t2">U-Sub        </td>
                         <td>U12-8 Omni100 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
-                        <td class="t2">Subwoofers  </td>
+                        <td class="t2">Sucwoofers  </td>
                         <td class="t2">U-Sub        </td>
                         <td>U12-8 Omni130 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr>
                         <td class="t2">Subwoofers  </td>
@@ -1454,7 +1457,7 @@ table{
                         <td class="t2">U-Sub        </td>
                         <td>U15 Omni130 </td>
                         <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
+                        <td class="t3c">N* </td>
                         <td class="t3b">Y </td>
                         <td class="t3b">Y</td>
                 </tr>
@@ -1473,7 +1476,7 @@ table{
                         <td class="t2">APS-SUB        </td>
                         <td>APS-SUB Omni100 </td>
                         <td class="t3a">N </td>
-                        <td class="t3a">N </td>
+                        <td class="t3b">Y </td>
                         <td class="t3b">Y </td>
                         <td class="t3b">Y</td>
                 </tr>
@@ -1482,9 +1485,9 @@ table{
                         <td class="t2">APS-SUB        </td>
                         <td>APS-SUB Omni130 </td>
                         <td class="t3a">N </td>
-                        <td class="t3a">N </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -1509,10 +1512,10 @@ table{
                         <td class="t2">Subwoofers  </td>
                         <td class="t2">N-SUB        </td>
                         <td>N-SUB Omni130 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -1613,7 +1616,7 @@ table{
                         <td class="t2">OMNIO5         </td>
                         <td>OMNIO5 > </td>
                         <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
+                        <td class="t3c">N* </td>
                         <td class="t3b">Y </td>
                         <td class="t3b">Y</td>
                 </tr>
@@ -1632,7 +1635,7 @@ table{
                         <td class="t2">KTV         </td>
                         <td>LO </td>
                         <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
+                        <td class="t3c">N* </td>
                         <td class="t3b">Y </td>
                         <td class="t3b">Y</td>
                 </tr>
@@ -1641,7 +1644,7 @@ table{
                         <td class="t2">KTV         </td>
                         <td>MID & HI </td>
                         <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
+                        <td class="t3c">N* </td>
                         <td class="t3b">Y </td>
                         <td class="t3b">Y</td>
                 </tr>
@@ -1659,10 +1662,10 @@ table{
                         <td class="t2">Special Applications  </td>
                         <td class="t2">CLEAR          </td>
                         <td>CLEAR  </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N* </td>
+                        <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
                         <td class="t2"></td>
@@ -1675,264 +1678,273 @@ table{
                 </tr>
 
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">LA12          </td>
-                        <td>3WAY Array LOW </td>
-                        <td class="t3a">N </td>
-                        <td class="t3a">N </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">LA12          </td>
+                    <td>3WAY Array LOW </td>
+                    <td class="t3a">N </td>
+                    <td class="t3a">N </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">LA12          </td>
-                        <td>3WAY Array MID & HI </td>
-                        <td class="t3a">N </td>
-                        <td class="t3a">N </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">LA12          </td>
+                    <td>3WAY Array MID & HI </td>
+                    <td class="t3a">N </td>
+                    <td class="t3a">N </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
-                        <td class="t2"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-
+                
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">LA8         </td>
-                        <td>2WAY Array </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
-                </tr>
-                <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">LA8         </td>
-                        <td>Array </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">LA8         </td>
+                    <td>2WAY Array </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">LA8         </td>
-                        <td>Single </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">LA8         </td>
+                    <td>Array </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
+                </tr>
+                <tr>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">LA8         </td>
+                    <td>Single </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
-                        <td class="t2"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-
+                
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">Array    </td>
-                        <td>LA4 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">LA4 </td>
+                    <td >Array    </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">Single  </td>
-                        <td>LA4 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">LA4 </td>
+                    <td >Single  </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
-                        <td class="t2"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-
+                
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">LA4-SUB  </td>
-                        <td>LA4SUB Omni100 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">LA4-SUB  </td>
+                    <td>LA4SUB Omni100 </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
-                        <td class="t2"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-
+                
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">LA4-SUB </td>
-                        <td>LA4SUB Omni200</td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">LA4-SUB </td>
+                    <td>LA4SUB Omni200</td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
-                        <td class="t2"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-
+                
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">PW-SUB    </td>
-                        <td>PW12 Omni100 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
-                </tr>
-                <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">PW-SUB  </td>
-                        <td>PW115 Omni100 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">PW-SUB    </td>
+                    <td>PW12 Omni100 </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">PW-SUB    </td>
-                        <td>PW118 Omni100 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">PW-SUB  </td>
+                    <td>PW115 Omni100 </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">PW-SUB  </td>
-                        <td>PW418 Omni100 </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">PW-SUB    </td>
+                    <td>PW118 Omni100 </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
+                </tr>
+                <tr>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">PW-SUB  </td>
+                    <td>PW418 Omni100 </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
-                        <td class="t2"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-
+                
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">K4    </td>
-                        <td>K4 Fullrange </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">K4    </td>
+                    <td>K4 Fullrange </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">K4  </td>
-                        <td>K4 Crossover </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">K4  </td>
+                    <td>K4 Crossover </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
-                        <td class="t2"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-
+                
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">K5    </td>
-                        <td>K5 Fullrange </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">K5    </td>
+                    <td>K5 Fullrange </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">K5  </td>
-                        <td>K5 Crossover </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">K5  </td>
+                    <td>K5 Crossover </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
-                        <td class="t2"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-
+                
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">RX40    </td>
-                        <td>RX40 Fullrange </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">RX40    </td>
+                    <td>RX40 Fullrange </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr>
-                        <td class="t2">Discontinued   </td>
-                        <td class="t2">RX40  </td>
-                        <td>RX40 Crossover </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y </td>
-                        <td class="t3b">Y</td>
+                    <td class="t2">Discontinued   </td>
+                    <td class="t2">RX40  </td>
+                    <td>RX40 Crossover </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N* </td>
+                    <td class="t3c">N*</td>
                 </tr>
                 <tr class="space" >
-                        <td class="t2"></td>
-                        <td class="t2"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <td class="t2"></td>
+                    <td class="t2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
+
+
+
+
+
+
+
+
+

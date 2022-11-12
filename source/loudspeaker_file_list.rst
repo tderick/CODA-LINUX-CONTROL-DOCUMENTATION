@@ -9,6 +9,8 @@ Not all loudspeakers are permitted on all amplifiers. A couple of factors dictat
 .. raw:: html
     :file: speaker_file_permissibility.html
 
+|
+
 2. Loudspeaker file defaults
 -----------------------------
 

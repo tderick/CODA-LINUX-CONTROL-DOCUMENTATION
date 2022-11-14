@@ -1,7 +1,7 @@
 Loudspeaker File List
 =====================
 
-1. Loudspeaker file permissibility
+1. Loudspeaker File Permissibility
 ----------------------------------
 
 Not all loudspeakers are permitted on all amplifiers. A couple of factors dictate this; some loudspeakers require sensor control, which is not fitted to LINUS5-C, LINUS10-C and LINUS12C. Some loudspeakers require more power than certain amplifiers can provide. The table below details which loudspeakers are permissible on the various amplifier types. New additions bundled in this version are highlighted in purple.
@@ -11,7 +11,7 @@ Not all loudspeakers are permitted on all amplifiers. A couple of factors dictat
 
 |
 
-2. Loudspeaker file defaults
+2. Loudspeaker File Defaults
 -----------------------------
 
 Amplifiers contain a finite amount of storage locations. The list below details which loudspeaker files are permanently accessible from the Front Panel of the various amplifiers. Certain loudspeakers have been selectively omitted from the Front Panel recall, for reasons of storage space.

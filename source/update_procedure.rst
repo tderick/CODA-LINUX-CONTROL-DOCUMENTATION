@@ -1,14 +1,14 @@
 Update Procedure
 ================
 
-Upgrading from LINUS Control v2.x to LINUS Control v2.3
+Upgrading from LINUS Control v2.x to LINUS Control v2.4
 --------------------------------------------------------
 
 • Set your wired ethernet interface to 192.168.1.250 / 255.255.0.0
 • Disable all other network interfaces, including Wi-Fi.
 • Check your interface IP, Subnet Mask, and check you have disabled all other network interfaces, **including Wi-Fi**.
 • Close any existing instance of LINUS Control.
-• Launch LINUS Control v2.3.
+• Launch LINUS Control v2.4.
 • Click the Online button in the top right of the window.
 • Network scanning will now start. In the bottom taskbar, an icon will be presented, showing how many amplifiers have been detected on the network. Click this button:
 
@@ -78,17 +78,17 @@ The following firmware is included with LINUS Control v2.3:
 +-----------------------+-------------------+
 | Product               | Firmware Version  |
 +=======================+===================+
-| LINUS CON             | V1.69             |
+| LINUS CON             | V1.70             |
 +-----------------------+-------------------+
-| LINUS 14 / LINUS14-D  | V3.69             |
+| LINUS 14 / LINUS14-D  | V3.70             |
 +-----------------------+-------------------+
-| LINUS10               | V2.69             |
+| LINUS10               | V2.70             |
 +-----------------------+-------------------+
-| LINUS12C              | V3.69             |
+| LINUS12C              | V3.70             |
 +-----------------------+-------------------+
-| LINUS10-C             | V5.69             |
+| LINUS10-C             | V5.70             |
 +-----------------------+-------------------+
-| LINUS5-C              | V5.69             |
+| LINUS5-C              | V5.70             |
 +-----------------------+-------------------+
 
 

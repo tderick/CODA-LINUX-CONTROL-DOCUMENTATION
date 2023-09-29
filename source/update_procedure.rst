@@ -73,7 +73,7 @@ Upgrading from LINUS Control v2.x to LINUS Control v2.4
 LINUS Amplifier Firmware Version
 ---------------------------------
 
-The following firmware is included with LINUS Control v2.3:
+The following firmware is included with LINUS Control v2.4:
 
 +-----------------------+-------------------+
 | Product               | Firmware Version  |

@@ -10,7 +10,7 @@
    :align: center
 
 
-LINUS Control v2.3 documentation.
+LINUS Control v2.4 documentation.
 =================================
 
 

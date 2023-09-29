@@ -20,12 +20,12 @@ Table of Contents
 .. toctree::
 
   operation_manual
-  known_issues
   new_features
   third_party_control
   time_alignment
   update_procedure
   loudspeaker_file_list
+  known_issues
    
 
 

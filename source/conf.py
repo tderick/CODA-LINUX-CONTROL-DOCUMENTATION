@@ -22,7 +22,7 @@ copyright = '2022, CODA Audio'
 author = 'CODA Audio'
 
 # The full version, including alpha/beta/rc tags
-release = '2.3.0'
+release = '2.5.0'
 
 
 # -- General configuration ---------------------------------------------------
